@@ -1,0 +1,12 @@
+/* 線を描画するための設定
+ * [引用元]
+ * http://king-of-nowhere.hatenablog.com/entry/2013/11/28/084116
+ */
+.line{
+  position: absolute;
+  border-top: solid 1px #FF4981;
+  -moz-transform-origin:0% 0%;
+  -webkit-transform-origin:0% 0%;
+  transform-origin:0% 0%;
+  float: left;
+}
