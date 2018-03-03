@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- オブジェクトに鼻毛を生やすスクリプト -->
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
@@ -7,18 +8,20 @@
   <link rel="stylesheet" type="text/css" href="./css/nosehair.css">
 
   <style type="text/css">
-  #sampleObj{
-    width:100px;
-    height:100px;
-    border: medium solid #000000;
-    text-align: center;
-  }
+    #sampleObj {
+      width: 100px;
+      height: 100px;
+      border: medium solid #000000;
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
   <div style="text-align:center;">
     ボタンを押すと鼻毛が生えるぞ！
-    <br><br>
+    <br>
+    <br>
     <!--
     <div id="sampleObj" style="margin:0 auto;" class="">
       100*100の<br>div。
@@ -39,27 +42,27 @@
   </div>
 
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="./js/nosehair.js"></script>
   <script type="text/javascript">
 
-  $(document).ready(function()
-  {
-    //0.1秒ごとに鼻毛を再描画する。
-    setInterval(function () {
-      clearLine();
-      setNoseHair();
-    }, 100);
+    $(document).ready(function () {
+      //0.1秒ごとに鼻毛を再描画する。
+      setInterval(function () {
+        clearLine();
+        setNoseHair();
+      }, 100);
 
-    $('#btnTgl').on('click', function(event) {
-      //$('#sampleObj').toggleClass("noseHair");
-      $('#sampleObj2').toggleClass("noseHair");
-      //$('#btnTgl').toggleClass("noseHair");
+      $('#btnTgl').on('click', function (event) {
+        //$('#sampleObj').toggleClass("noseHair");
+        $('#sampleObj2').toggleClass("noseHair");
+        //$('#btnTgl').toggleClass("noseHair");
+      });
     });
-  });
 
 
   </script>
 
 </body>
+
 </html>
